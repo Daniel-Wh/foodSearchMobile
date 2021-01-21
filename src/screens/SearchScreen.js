@@ -1,13 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native'
+import {SearchBar} from '../components/SearchBar'
 
 
 export const SearchScreen = ({ navigation })=>{
-    return <View>
+    return (<View>
+        <SearchBar/>
         <Text>
             Search Screen
         </Text>
-    </View>
+    </View>)
 }
 
 

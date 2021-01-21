@@ -11,7 +11,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="SearchScreen" component={SearchScreen} options={{title: "Sign In"}}/>
+        <Stack.Screen name="SearchScreen" component={SearchScreen} options={{title: "Search Businesses"}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
