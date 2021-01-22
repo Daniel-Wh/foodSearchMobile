@@ -9,7 +9,7 @@ export const ResultItem = ({business})=>{
         style={styles.imgStyle}
         />
         <Text style={styles.name}>{business.name}</Text>
-        <Text>{business.rating} stars, {business.review_count} reviews</Text>
+        <Text style={styles.rating}>{business.rating} stars, {business.review_count} reviews</Text>
     </View>)
 }
 
@@ -18,9 +18,16 @@ const styles = StyleSheet.create({
         width: 250,
         borderRadius: 5, 
         height: 120,
-        margin: 20
+        marginLeft: 15,
+        marginBottom: 5
     },
     name: {
         fontWeight: 'bold',
+        marginLeft: 15,
+        marginBottom: 5
+    },
+    rating: {
+        marginLeft: 15,
+        marginBottom: 5
     }
 })

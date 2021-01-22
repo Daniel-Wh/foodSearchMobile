@@ -13,6 +13,7 @@ export const ResultsList = ({title, results}) => {
         horizontal
         data={results}
         keyExtractor={result => result.id}
+        showsHorizontalScrollIndicator={false}
         renderItem={( {item} )=>{
             return <ResultItem business={item}/>
         }}
@@ -22,10 +23,11 @@ export const ResultsList = ({title, results}) => {
 
 const styles = StyleSheet.create({
     titleStyle: {
-        fontSize: 18,
-        fontWeight: 'bold'
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginLeft: 15
     },
     container: {
-        margin: 10
+        marginBottom: 15
     }
 })
